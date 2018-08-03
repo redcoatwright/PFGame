@@ -121,8 +121,9 @@ def main():
         elif user_input[0] == "shout" or user_input[0] == "yell" or user_input[0] == "scream":
             print("You shout into the darkness, your voice echoes back at you from the dark.")
 
-        
-                    
+        if len(user_input) == 1 and user_input[0] == "stand":
+            
+                  
         
         elif user_input[0] == "stand" or (user_input[0] + user_input[1]) == "getup":
             print("You are currently standing up, congratulations on figuring out basic motor control, pssshhh, just fyi, babies do that every day. Baby.")
