@@ -40,12 +40,32 @@ def main():
 
         user_input = userInput(input("What do you want to do?"))
 
-        
-        
-        if user_input[0] == "look":
-            if len(user_input) == 1:
+        [x.lower() for x in user_input]
+
+        if len(user_input) == 1:
+            
+            if user_input[0] == "look":
                 print("Look where? Try saying 'look left' or 'look right'")
-            else:
+
+            elif user_input[0] == "search":
+                print("Search where, bud?")
+
+            elif user_input[0] == "take":
+                print("Take what...? Try again, this time with an object in mind")
+
+            elif user_input[0] == "stand":
+                print("You are currently standing up, congratulations on figuring out basic motor control, pssshhh, just fyi, babies do that every day. Baby.")
+                control_signal_3 = 1 #the control signal that allows the player to fight further on in level 1'
+
+            elif user_input[0] == "shout" and user_input[0] == "yell" and user_input[0] == "scream":
+                print("You shout into the darkness, your voice echoes back at you from the dark.")
+
+            elif user_input[0] == "help":
+                print("Here are some commands you can use 'Look (left)', 'Search (the ground)' or look/search other places")
+
+        else:
+
+            if user_input[0] == "look":
                 if user_input[1] == "left":
                     print("You see darkness...")
                     counter += 1
@@ -81,10 +101,7 @@ def main():
                 else:
                     print("Huh, you said 'look {0}' which either doesn't make sense or isn't a viable command, try again".format(user_input[1]))
 
-        elif user_input[0] == "search":
-            if len(user_input) == 1:
-                print("Search where, bud?")
-            else:
+            elif user_input[0] == "search":
                 if user_input[1] == "ground" or user_input[2] == "ground":
                     print("You grope around on the ground and your hands stumble across a large rock, it could be used as an impromptu weapon...")
                     control_signal_1 = 1
@@ -100,10 +117,7 @@ def main():
                 else:
                     print("Search where now?? You said 'search {0}' but that really doesn't make sense or maybe we didn't program that response, try something else, hoss.".format(user_input[1]))
 
-        elif user_input[0] == "take":
-            if len(user_input) == 1:
-                print("Take what...? Try again, this time with an object in mind")
-            else:
+            elif user_input[0] == "take":
                 if (user_input[1] == "tinder" or (user_input[1] + user_input[2]) == "tinderbox" or user_input[1] == "tinderbox" or user_input[1] == "box" or user_input[1] == "flint") \
                     and control_signal_2 == 1:
                     print("You take the tinder box and flint, you little pyro, you")
@@ -118,18 +132,13 @@ def main():
                 elif (user_input[1] + user_input[2] + user_input[3] + user_input[4]) == "stockofthesituation":
                     print("Well it isn't great...you've woken up in god only knows where, splitting headache and what's the weird noise you're hearing...")
 
-        elif user_input[0] == "shout" or user_input[0] == "yell" or user_input[0] == "scream":
-            print("You shout into the darkness, your voice echoes back at you from the dark.")
-
-        if len(user_input) == 1 and user_input[0] == "stand":
-            
-                  
+            elif (user_input[0] + user_input[1]) == "getup":
+                print("You are currently standing up, congratulations on figuring out basic motor control, pssshhh, just fyi, babies do that every day. Baby.")
+                control_signal_3 = 1 #the control signal that allows the player to fight further on in level 1'
         
-        elif user_input[0] == "stand" or (user_input[0] + user_input[1]) == "getup":
-            print("You are currently standing up, congratulations on figuring out basic motor control, pssshhh, just fyi, babies do that every day. Baby.")
-            control_signal_3 = 1 #the control signal that allows the player to fight further on in level 1
+       
 
-        if "tinder box and flint" in player.inventory:
+        if "tinder box and flint" in player.inventory and control_signal_3 == 1:
             
             if user_input[0] == "light" or user_input[0] == "set":
                 if len(user_input) == 1:
