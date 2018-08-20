@@ -1,15 +1,17 @@
+import weaponList
+
 class newPC():
 
     char_name = "Defaulty McDefaultNameplate"
     current_xp = 0
-    total_hp = 10
-    current_hp = 10
-    armor_class = 10
+    t_hp = 10
+    c_hp = 10 #current hp
+    ac = 10
     init = 0
     melee_attk = 0
     inventory = []
 
-    equItem = ""
+    equItem = weaponList.Fists()
 
     def equipItem(self, item):
         equItem = item
@@ -21,16 +23,16 @@ class newPC():
         newPC.current_xp += amt
 
     def sub_hp(self, amt):
-        newPC.current_hp -= amt
+        newPC.c_hp -= amt
 
     def add_hp(self, amt):
-        newPC.current_hp += amt
+        newPC.c_hp += amt
 
     def add_tot_hp(self, amt):
-        newPC.total_hp += amt
+        newPC.t_hp += amt
 
     def add_ac(self, amt):
-        newPC.armor_class += amt
+        newPC.ac += amt
 
     def mel_atk(self, amt):
         newPC.melee_attk += amt

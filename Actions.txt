@@ -1,0 +1,53 @@
+1st part:
+
+look around - darkness everywhere around you, it's like there's no light
+look back - same as look left/up/down/right
+look forward - same as above
+
+Add more "wrong command" replies
+
+Add more help as you say "help" more
+
+Try to lead the player on (for instance, if they try to light a fire when they're laying down, say something)
+
+light tinder - light a fire
+
+light flint - "You can't set fire to a stone..."
+
+Hello - say something back, snippy maybe?
+
+inventory - display list of items, allow equipping etc
+
+Move - standing - you stumble on a rock and fall back to the ground
+     - lying down - haven't found the rock - you crawl onto a rock, you feel as though you could pick it up
+     - lying down - have found the rock - left - you run into a wall quickly
+					- right - you crawl across the ground, over small rocks and pebbles and you start to notice a chittering noise and stop
+					- forward - you run into a wall quickly, nothing much over here
+					- backward - you crawl for a while but find nothing this way
+
+Turn on light - "What is...a light? I don't understand."
+
+Fight - "You're getting ahead of yourself here, you're currently lying on the floor in complete darkness, let's solve those problems before starting fights, jeez"
+
+2nd part:
+
+fight rat - Say to just type "fight" to bring up the fight menu
+
+lay down - lay back down, flip control bit
+
+extinguish fire - put out fire - "No...why would you want to do that when a giant rat is bearing down on you, are you insane??"
+
+Move - forward - "You move one step closer to the rat and it hisses at you and attacks!"
+     - Back - "You move backwards slowly but quickly run into the cave wall"
+     - Left/right - "You move to the side and the rat watches you move, it starts hissing at you and attacks!"
+
+Look around - You're currently standing in a cave only lit by the flickering light of the small fire you made with your tinder and flint. To your left is the cave wall, it curls up overhead, if you were to reach out you could touch the ceiling. To your right, the same as your left but further away. Behind you the cave ends abruptly and in front of you, the cave continues on but the aforementioned rat is bearing down on you.
+
+Inventory - same as in part 1
+
+help - "Point out the rat that's bearing down on you, say to bring up the fight menu type "fight""
+     - "They can also try to move or look or lay down"
+
+run/run away - you can't
+
+

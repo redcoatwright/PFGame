@@ -4,9 +4,9 @@ from time import sleep
 def roll_d20():
     for x in range(1,5):
         print("-", end = "")
-        sleep(0.1)
+        sleep(0.15)
         print("|", end = "")
-        sleep(0.1)
+        sleep(0.15)
     print("->", end = " ")
     rand_num = random.randint(1,20)
     print(rand_num)
