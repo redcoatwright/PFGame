@@ -9,6 +9,8 @@ class newPC():
     ac = 10
     init = 0
     melee_attk = 0
+
+    einventory = []
     inventory = []
 
     equItem = weaponList.Fists()

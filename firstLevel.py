@@ -9,6 +9,7 @@ import playerChar
 import natMonsters
 import combat
 import time
+import weaponList
 
 def userInput(user_input):
     return user_input.lower().split(" ")
@@ -168,7 +169,7 @@ def main():
 
                     print("You grab the rock, heft it, good weight to it. You stick it in your backpack in case you need it later. \n")
                     control_signal_1 = 0
-                    player.inventory.append("rock")
+                    player.einventory.append(weaponList.Rock)
 
 
             elif (user_input[0] + user_input[1]) == "getup" or (user_input[0] + user_input[1]) == "standup":
@@ -236,7 +237,7 @@ def main():
 
                     print("You grab the rock, heft it, good weight to it. You stick it in your backpack in case you need it later. \n")
                     control_signal_1 = 0
-                    player.inventory.append("rock")
+                    player.einventory.append(weaponList.Rock)
 
                 else:
                     print("Take what now? I don't understand what you said \n")
@@ -448,18 +449,21 @@ def main():
 
                                 elif user_input_3 == "c":
 
-                                    if player.inventory is []:
+                                    if player.einventory is []:
                                         print("You have nothing! N-O-T-H-I-N-G \nThere was a rock on the ground you missed, though, just saying... \n")
                                     
                                     else:
                                         print("Here's what is in your inventory: \n")
                                         counter = 1
                                         tdict = dict()
-                                        for x in player.inventory:
+                                        for x in player.einventory:
+                                            print("hello: {0}".format(x))
                                             tdict[counter] = x
                                             counter += 1
 
                                         print(tdict)
+
+                                        loop_control_3 = 0
 
                                         while loop_control_3 == 0:
                                         
@@ -470,10 +474,27 @@ def main():
 
                                             else:
                                                 for key in tdict.keys():
-                                                    if user_input_3 == key:
+                                                    if user_input_3[0] == str(key):
                                                         user_choice = tdict[key]
 
-                                        
+                                                loop_control_4 = 0
+
+                                                while loop_control_4 == 0:
+
+                                                    user_input_4 = userInput(input("You have chosen {0}. Do you want to equip it? Type yes or no.".format(user_choice)))
+
+                                                    if user_input_4[0] == "yes":
+
+                                                        player.equipItem(user_choice)
+
+                                                    elif user_input_4[0] == "no":
+
+                                                        loop_control_4 = 1
+                                                        loop_control_3 = 1
+
+                                                    else:
+                                                        
+                                                        print("Yeah, you said {0} which somehow doesn't make sense. I dunno why, I'm just a program.".format(user_input_4))
                                                                         
                             print("---------------------------------------------------------------------------")
                             time.sleep(5)
