@@ -325,10 +325,10 @@ def main():
 
                     print("Rolling D20 + init to figure out who goes first!\n")
                     rat_init = diceRolling.roll_d20() + rat.init
-                    print("Rat init: {0}\n".format((rat_init + rat.init)))
+                    print("Rat init: {0}\n".format(rat_init))
 
                     pc_init = diceRolling.roll_d20() + player.init
-                    print("Your init: {0}\n".format((pc_init + player.init)))
+                    print("Your init: {0}\n".format(pc_init))
                        
                     result = combat.larger_num(rat_init,pc_init)
 
@@ -481,11 +481,13 @@ def main():
 
                                                 while loop_control_4 == 0:
 
-                                                    user_input_4 = userInput(input("You have chosen {0}. Do you want to equip it? Type yes or no.".format(user_choice)))
+                                                    user_input_4 = userInput(input("You have chosen {0}. Do you want to equip it? Type yes or no. \n >>> ".format(user_choice)))
 
                                                     if user_input_4[0] == "yes":
 
                                                         player.equipItem(user_choice)
+                                                        loop_control_4 = 1
+                                                        loop_control_3 = 1
 
                                                     elif user_input_4[0] == "no":
 
@@ -493,7 +495,7 @@ def main():
                                                         loop_control_3 = 1
 
                                                     else:
-                                                        
+
                                                         print("Yeah, you said {0} which somehow doesn't make sense. I dunno why, I'm just a program.".format(user_input_4))
                                                                         
                             print("---------------------------------------------------------------------------")
