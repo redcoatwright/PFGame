@@ -169,7 +169,7 @@ def main():
 
                     print("You grab the rock, heft it, good weight to it. You stick it in your backpack in case you need it later. \n")
                     control_signal_1 = 0
-                    player.einventory.append(weaponList.Rock)
+                    player.einventory.append(weaponList.Rock())
 
 
             elif (user_input[0] + user_input[1]) == "getup" or (user_input[0] + user_input[1]) == "standup":
@@ -237,7 +237,7 @@ def main():
 
                     print("You grab the rock, heft it, good weight to it. You stick it in your backpack in case you need it later. \n")
                     control_signal_1 = 0
-                    player.einventory.append(weaponList.Rock)
+                    player.einventory.append(weaponList.Rock())
 
                 else:
                     print("Take what now? I don't understand what you said \n")
@@ -485,7 +485,11 @@ def main():
 
                                                     if user_input_4[0] == "yes":
 
+
+
                                                         player.equipItem(user_choice)
+
+
                                                         loop_control_4 = 1
                                                         loop_control_3 = 1
 

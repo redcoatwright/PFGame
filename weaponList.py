@@ -18,12 +18,12 @@ weapon in GP
 class Fists(Weapon):
 
     def __init__(self):
-        super().__init__(4, 1, 2, 0, "You cock a fist back and swing forward at them...", "and the punch lands solidly!\n", "and your punch missed! You suck at this! *points at you* Hahahahaha... \n")
+        super().__init__(3, 1, 2, 0, "You cock a fist back and swing forward at them...", "and the punch lands solidly!\n", "and your punch missed! You suck at this! *points at you* Hahahahaha... \n")
 
 class Rock(Weapon):
 
     def __init__(self):
-        super().__init__(3, 1, 1.5, 0, "You raise the rock up and bring it down on the enemy...", "and the rock smashes against them!\n", "and the strike misses entirely, shame!\n")
+        super().__init__(4, 1, 1.5, 0, "You raise the rock up and bring it down on the enemy...", "and the rock smashes against them!\n", "and the strike misses entirely, shame!\n")
 
 class Dagger(Weapon):
 

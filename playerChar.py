@@ -16,7 +16,7 @@ class newPC():
     equItem = weaponList.Fists()
 
     def equipItem(self, item):
-        equItem = item
+        newPC.equItem = item
 
     def add_to_inv(self, item):
         newPC.inventory.append(item)
