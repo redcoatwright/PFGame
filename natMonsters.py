@@ -1,8 +1,10 @@
 class natMonster:
 
-    def __init__(self, maxHealth, curHealth, armor, dmgDie, dmgMult, crit, init, melee_attk):
-        self.t_hp = maxHealth #max health
-        self.c_hp = curHealth #current health
+    def __init__(self, cmdName, dispName, maxHealth, curHealth, armor, dmgDie, dmgMult, crit):
+        self.cmdName = cmdName #name provided by player
+        self.dispName = dispName #display name of the monster
+        self.max_health = maxHealth #max health
+        self.current_health = curHealth #current health
         self.ac = armor #armor class
         self.dmg_die = dmgDie #the dice that's rolled for dmg
         self.dmg_mult = dmgMult #the number of dice rolled
@@ -17,4 +19,4 @@ class natMonster:
 
 class Rat(natMonster):
     def __init__(Self):
-        super().__init__(6, 6, 12, 3, 1, 2, 2, 1)
+        super().__init__('rat', 'Rat', 6, 6, 15, 3, 1, 2)

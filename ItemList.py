@@ -14,9 +14,9 @@ class BasicShirt(Item):
 
 class BasicPants(Item):
     def __init__(self):
-        super().__init__("These are very basic pants, you were wearing them when you woke up in the cave, they're pretty tattered at the moment." 0)
+        super().__init__("These are very basic pants, you were wearing them when you woke up in the cave, they're pretty tattered at the moment.", 0)
 
 class BasicBoots(Item):
     def __init__(self):
-        super().__init__("These are very basic boots, you were wearing them when you woke up in the cave, they're pretty tattered at the moment." 0)
+        super().__init__("These are very basic boots, you were wearing them when you woke up in the cave, they're pretty tattered at the moment.", 0)
 
