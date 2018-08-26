@@ -59,3 +59,31 @@ class Barrel(feature):
         super().__init__("A large barrel blocks your way", False, breakable=True)
 
 
+class Wall(feature):
+
+    def __init__(self):
+        super().__init__("You come up to a wall, blocking your path", False)
+
+
+class ArmorRack(feature):
+
+    def __init__(self):
+        super().__init__("An armor rack stands here, maybe it holds something good", True, search=True)
+
+
+class Stalagmite(feature):
+
+    def __init__(self):
+        super().__init__("A small rock mound rises from the ground, making it hard to walk through", True, True)
+
+
+class OrnateChest(feature):
+
+    def __init__(self):
+        super().__init__("A large chest emblazoned with gold and embedded gem stones stands before you, a large keyhole lies on the front", True, search=True, lock=True, breakable=True)
+
+
+class LargeChest(feature):
+
+    def __init__(self):
+        super().__init__("A large wooden chest banded with steel stands before you, a large keyhole lies on the front", True, search=True, lock=True, breakable=True)
