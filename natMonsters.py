@@ -1,6 +1,6 @@
 class natMonster:
 
-    def __init__(self, cmdName, dispName, maxHealth, curHealth, armor, dmgDie, dmgMult, crit):
+    def __init__(self, cmdName, dispName, maxHealth, curHealth, armor, dmgDie, dmgMult, crit, init, melee_attk):
         self.cmdName = cmdName #name provided by player
         self.dispName = dispName #display name of the monster
         self.max_health = maxHealth #max health
@@ -18,5 +18,5 @@ class natMonster:
 
 
 class Rat(natMonster):
-    def __init__(Self):
-        super().__init__('rat', 'Rat', 6, 6, 15, 3, 1, 2)
+    def __init__(self):
+        super().__init__('rat', 'Rat', 6, 6, 15, 3, 1, 2, 1, 1)

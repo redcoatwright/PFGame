@@ -1,4 +1,4 @@
-import itemList
+import ItemList
 import natMonsters
 
 class Area:
@@ -30,7 +30,7 @@ class Cavern(Map):
         super().__init__(5, 5)
     
         rat = natMonsters.Rat()
-        shirt = itemList.BasicShirt()
+        shirt = ItemList.BasicShirt()
         self.level[1][1].enemies = [rat]
         self.level[1][1].intro_text = "Ah! A rat!"
         self.level[2][3].items = [shirt]
