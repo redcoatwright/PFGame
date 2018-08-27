@@ -87,3 +87,5 @@ class LargeChest(feature):
 
     def __init__(self):
         super().__init__("A large wooden chest banded with steel stands before you, a large keyhole lies on the front", True, search=True, lock=True, breakable=True)
+
+

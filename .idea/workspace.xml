@@ -18,22 +18,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="5" />
+          <entry key="Python" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3163" />
+          <entry key="py" value="3593" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3163" />
+          <entry key="Python" value="3593" />
         </counts>
       </usages-collector>
     </session>
@@ -43,10 +43,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="255">
               <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playerChar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+              <folding>
+                <marker date="1535327506405" expanded="true" signature="410:459" ph="..." />
               </folding>
             </state>
           </provider>
@@ -69,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="204">
               <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -79,16 +91,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/beginningCave.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+                <marker date="1535330166279" expanded="true" signature="168:457" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ItemList.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="152" selection-start-line="8" selection-start-column="152" selection-end-line="8" selection-end-column="152" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/caveFeatures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="360">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
               <folding>
-                <marker date="1535315814588" expanded="true" signature="14:15" ph="..." />
-                <marker date="1535315814588" expanded="true" signature="14:20" ph="..." />
-                <marker date="1535315814588" expanded="true" signature="766:772" ph="..." />
-                <marker date="1535315814588" expanded="true" signature="2524:2738" ph="..." />
-                <marker date="1535315814588" expanded="true" signature="2764:2765" ph="..." />
+                <marker date="1535327506374" expanded="true" signature="14:15" ph="..." />
+                <marker date="1535327506374" expanded="true" signature="14:20" ph="..." />
+                <marker date="1535327506374" expanded="true" signature="766:772" ph="..." />
+                <marker date="1535327506374" expanded="true" signature="2524:2738" ph="..." />
+                <marker date="1535327506374" expanded="true" signature="2764:2765" ph="..." />
               </folding>
             </state>
           </provider>
@@ -121,6 +155,8 @@
         <option value="$PROJECT_DIR$/natMonsters.py" />
         <option value="$PROJECT_DIR$/world.py" />
         <option value="$PROJECT_DIR$/caveFeatures.py" />
+        <option value="$PROJECT_DIR$/playerChar.py" />
+        <option value="$PROJECT_DIR$/beginningCave.py" />
       </list>
     </option>
   </component>
@@ -239,7 +275,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13483146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13483146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -247,7 +283,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -268,29 +304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firstLevel.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/natMonsters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -300,14 +313,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/caveFeatures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="360">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
           <folding>
-            <marker date="1535315814588" expanded="true" signature="14:15" ph="..." />
-            <marker date="1535315814588" expanded="true" signature="14:20" ph="..." />
-            <marker date="1535315814588" expanded="true" signature="766:772" ph="..." />
-            <marker date="1535315814588" expanded="true" signature="2524:2738" ph="..." />
-            <marker date="1535315814588" expanded="true" signature="2764:2765" ph="..." />
+            <marker date="1535327506374" expanded="true" signature="14:15" ph="..." />
+            <marker date="1535327506374" expanded="true" signature="14:20" ph="..." />
+            <marker date="1535327506374" expanded="true" signature="766:772" ph="..." />
+            <marker date="1535327506374" expanded="true" signature="2524:2738" ph="..." />
+            <marker date="1535327506374" expanded="true" signature="2764:2765" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playerChar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <marker date="1535327506405" expanded="true" signature="410:459" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firstLevel.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ItemList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="152" selection-start-line="8" selection-start-column="152" selection-end-line="8" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beginningCave.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <marker date="1535330166279" expanded="true" signature="168:457" ph="..." />
           </folding>
         </state>
       </provider>

@@ -21,6 +21,9 @@ class newPC():
     def __init__(self, current_level):
         self.current_level = current_level
 
+    def set_level(self, current_level):
+        self.current_level = current_level
+
     def move(self, noun):
         if not noun:
             print("Move where?")
