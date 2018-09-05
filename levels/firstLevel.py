@@ -4,12 +4,17 @@
 #3) add look descriptions after lighting fire when the PC can see stuff (mostly just caves and whatnot)
 #4) inventory choice should be wrapped in try/catch block not loop over keys of dict
 
-import diceRolling
-import playerChar
-import natMonsters
+import utilities.diceRolling
+import utilities.playerChar
+import utilities.natMonsters
 import combat
 import time
-import weaponList
+import utilities.weaponList
+
+dice = utilities.diceRolling
+player_mod = utilities.playerChar
+monsters = utilities.natMonsters
+weapons = utilities.weaponList
 
 def userInput(user_input):
     return user_input.lower().split(" ")
@@ -46,7 +51,7 @@ def main():
     name = input("What is your name? If you don't answer, it'll be set to a default name which is pretty stupid so you may as well put something down...  \n \nEnter your name: ")
     print("\n")
     
-    player = playerChar.newPC()
+    player = player_mod.newPC()
 
     if name != "":
         player.change_name(name)
@@ -169,7 +174,7 @@ def main():
 
                     print("You grab the rock, heft it, good weight to it. You stick it in your backpack in case you need it later. \n")
                     control_signal_1 = 0
-                    player.einventory.append(weaponList.Rock())
+                    player.einventory.append(weapons.Rock())
 
 
             elif (user_input[0] + user_input[1]) == "getup" or (user_input[0] + user_input[1]) == "standup":
@@ -237,7 +242,7 @@ def main():
 
                     print("You grab the rock, heft it, good weight to it. You stick it in your backpack in case you need it later. \n")
                     control_signal_1 = 0
-                    player.einventory.append(weaponList.Rock())
+                    player.einventory.append(weapons.Rock())
 
                 else:
                     print("Take what now? I don't understand what you said \n")
@@ -306,7 +311,7 @@ def main():
 
                 if user_input_2[0] == "a" or user_input_2[0] == "giant" or user_input_2[0] == "rat":
 
-                    rat = natMonsters.Rat()
+                    rat = monsters.Rat()
 
                     print("You have entered combat with the giant rat!\n")
 
@@ -324,10 +329,10 @@ def main():
                     print("'''''''''''''''''''''''''''''''''''''")
 
                     print("Rolling D20 + init to figure out who goes first!\n")
-                    rat_init = diceRolling.roll_d20() + rat.init
+                    rat_init = dice.roll_d20() + rat.init
                     print("Rat init: {0}\n".format(rat_init))
 
-                    pc_init = diceRolling.roll_d20() + player.init
+                    pc_init = dice.roll_d20() + player.init
                     print("Your init: {0}\n".format(pc_init))
                        
                     result = combat.larger_num(rat_init,pc_init)
@@ -345,7 +350,7 @@ def main():
                         print("How to deal with this situation! Crazy times, I guess we can just coin toss it. \n")
                         coin = input("Do you want heads or tails? \n >>> ")
                         print("\n 1 is heads, 2 is tails! \n")
-                        coin_flip = diceRolling.roll_d2()
+                        coin_flip = dice.roll_d2()
                         
                         if (coin == "heads" and coin_flip == 1) or (coin == "tails" and coin_flip == 2):
                             print("\n You got lucky punk, your move! \n")
@@ -519,7 +524,7 @@ def main():
                 elif user_input_2[0] == "b" or user_input_2[0] == "my" or user_input_2[0] == "demons":
 
                     print("You wrestle with your demons, confronting the darker parts of your nature...")
-                    res = diceRolling.roll_d20()
+                    res = dice.roll_d20()
                     if res > 17:
                         print("Wow, you successfully face down your demons, you feel lighter, refreshed and generally a more well adjusted person \n")
                         print("which really isn't saying too much. Anyway, you gain 50 XP for your emotional fortitude")
