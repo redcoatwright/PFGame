@@ -1,4 +1,4 @@
-import utilities.weaponList
+import data.weaponList
 
 class newPC():
 
@@ -16,7 +16,7 @@ class newPC():
     einventory = []
     inventory = []
 
-    equItem = utilities.weaponList.Fists()
+    equItem = data.weaponList.Fists()
 
     def __init__(self, current_level):
         self.current_level = current_level
