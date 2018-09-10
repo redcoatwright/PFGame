@@ -204,3 +204,121 @@ class Sorcerer(GameClasses):
             [[10, 5], 12, 6, 12],  # lvl 20
 
         ]
+
+        super().__init__(s_skills, 2, "any", s_advance)
+
+
+class Ranger(GameClasses):
+
+    def __init__(self):
+
+        # list of class skills
+        r_skills = [
+
+            "Climb",
+            "Craft",
+            "Handle Animal",
+            "Heal",
+            "Intimidate",
+            "Knowledge (Dungeoneering)",
+            "Knowledge (Geography)",
+            "Knowledge (Nature)",
+            "Perception",
+            "Ride",
+            "Spellcraft",
+            "Stealth",
+            "Survival",
+            "Swim"
+
+        ]
+
+
+        # BAB, Fort Save, Ref Save, Will Save
+        # BAB can be split, multiple BABs mean multiple attacks
+        r_advance = [
+
+            [1, 2, 2, 0],  # lvl 1
+            [2, 3, 3, 0],  # lvl 2
+            [3, 3, 3, 1],  # lvl 3
+            [4, 4, 4, 1],  # lvl 4
+            [5, 4, 4, 1],  # lvl 5
+            [[6, 1], 5, 5, 2],  # lvl 6
+            [[7, 2], 5, 5, 2],  # lvl 7
+            [[8, 3], 6, 6, 2],  # lvl 8
+            [[9, 4], 6, 6, 3],  # lvl 9
+            [[10, 5], 7, 7, 3],  # lvl 10
+            [[11, 6, 1], 7, 7, 3],  # lvl 11
+            [[12, 7, 2], 8, 8, 4],  # lvl 12
+            [[13, 8, 3], 8, 8, 4],  # lvl 13
+            [[14, 9, 4], 9, 9, 4],  # lvl 14
+            [[15, 10, 5], 9, 9, 5],  # lvl 15
+            [[16, 11, 6, 1], 10, 10, 5],  # lvl 16
+            [[17, 12, 7, 2], 10, 10, 5],  # lvl 17
+            [[18, 13, 8, 3], 11, 11, 6],  # lvl 18
+            [[19, 14, 9, 4], 11, 11, 6],  # lvl 19
+            [[20, 15, 10, 5], 12, 12, 6],  # lvl 20
+
+        ]
+
+        super().__init__(r_skills, 6, "any", r_advance)
+
+
+
+class Rogue(GameClasses):
+
+    def __init__(self):
+
+        # list of class skills
+        ro_skills = [
+
+            "Acrobatics",
+            "Appraise",
+            "Bluff",
+            "Climb",
+            "Craft",
+            "Diplomacy",
+            "Disable Device",
+            "Disguise",
+            "Escape Artist",
+            "Intimidate",
+            "Knowledge (Dungeoneering)",
+            "Knowledge (Local)",
+            "Linguistics",
+            "Perception",
+            "Perform",
+            "Sense Motive",
+            "Sleight of Hand",
+            "Stealth",
+            "Swim",
+            "Use Magic Device"
+
+        ]
+
+        # BAB, Fort Save, Ref Save, Will Save
+        # BAB can be split, multiple BABs mean multiple attacks
+        ro_advance = [
+
+            [0, 0, 2, 0],  # lvl 1
+            [1, 0, 3, 0],  # lvl 2
+            [2, 1, 3, 1],  # lvl 3
+            [3, 1, 4, 1],  # lvl 4
+            [3, 1, 4, 1],  # lvl 5
+            [4, 2, 5, 2],  # lvl 6
+            [5, 2, 5, 2],  # lvl 7
+            [[6, 1], 2, 6, 2],  # lvl 8
+            [[6, 1], 3, 6, 3],  # lvl 9
+            [[7, 2], 3, 7, 3],  # lvl 10
+            [[8, 3], 3, 7, 3],  # lvl 11
+            [[9, 4], 4, 8, 4],  # lvl 12
+            [[9, 4], 4, 8, 4],  # lvl 13
+            [[10, 5], 4, 9, 4],  # lvl 14
+            [[11, 6, 1], 5, 9, 5],  # lvl 15
+            [[12, 7, 2], 5, 10, 5],  # lvl 16
+            [[12, 7, 2], 5, 10, 5],  # lvl 17
+            [[13, 8, 3], 6, 11, 6],  # lvl 18
+            [[14, 9, 4], 6, 11, 6],  # lvl 19
+            [[15, 10, 5], 6, 12, 6],  # lvl 20
+
+        ]
+
+        super().__init__(ro_skills, 8, "any", ro_advance)

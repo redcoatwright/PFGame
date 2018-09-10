@@ -20,30 +20,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="23" />
+          <entry key="py" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="23" />
+          <entry key="Python" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="282" />
-          <entry key="py" value="13909" />
+          <entry key="py" value="14890" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="14191" />
+          <entry key="Python" value="15172" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/player/playerChar.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/player/playerMechs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
+            <state relative-caret-position="-677">
               <caret line="139" column="49" lean-forward="true" selection-start-line="139" selection-start-column="49" selection-end-line="139" selection-end-column="49" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -69,24 +69,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/playerClasses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1343">
-              <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
+            <state relative-caret-position="238">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
-                <marker date="1536359158461" expanded="true" signature="18:19" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="18:24" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="252:1639" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="1668:1669" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="1668:1674" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="1693:1703" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="3094:3095" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="3094:3100" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="3119:3129" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="4532:4533" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="4532:4538" ph="..." />
-                <marker date="1536359158461" expanded="true" signature="4557:4567" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="18:19" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="18:24" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="252:1639" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="1668:1669" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="1668:1674" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="1693:1703" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="3094:3095" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="3094:3100" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="3119:3129" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="4532:4533" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="4532:4538" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="4557:4567" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="5822:5823" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="5822:5828" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="5847:5857" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="7370:7371" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="7370:7376" ph="..." />
+                <marker date="1536532084874" expanded="true" signature="7395:7405" ph="..." />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player/feats.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -168,10 +179,11 @@
         <option value="$PROJECT_DIR$/player/playerData.py" />
         <option value="$PROJECT_DIR$/player/playerMechs.py" />
         <option value="$PROJECT_DIR$/data/playerClasses.py" />
+        <option value="$PROJECT_DIR$/player/feats.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -347,10 +359,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13483146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27419356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -363,7 +375,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.3328551" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -470,13 +482,6 @@
     <entry file="file://$PROJECT_DIR$/mechanics/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/playerChar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mechanics/diceRolling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -510,36 +515,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/player/feats.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/playerClasses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
+        <state relative-caret-position="238">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
-            <marker date="1536359158461" expanded="true" signature="18:19" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="18:24" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="252:1639" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="1668:1669" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="1668:1674" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="1693:1703" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="3094:3095" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="3094:3100" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="3119:3129" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="4532:4533" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="4532:4538" ph="..." />
-            <marker date="1536359158461" expanded="true" signature="4557:4567" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="18:19" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="18:24" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="252:1639" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="1668:1669" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="1668:1674" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="1693:1703" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="3094:3095" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="3094:3100" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="3119:3129" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="4532:4533" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="4532:4538" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="4557:4567" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="5822:5823" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="5822:5828" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="5847:5857" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="7370:7371" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="7370:7376" ph="..." />
+            <marker date="1536532084874" expanded="true" signature="7395:7405" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/player/playerMechs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
+        <state relative-caret-position="-677">
           <caret line="139" column="49" lean-forward="true" selection-start-line="139" selection-start-column="49" selection-end-line="139" selection-end-column="49" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
             <marker date="1536351373909" expanded="true" signature="1954:1959" ph="..." />
             <marker date="1536351373909" expanded="true" signature="2172:2177" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/playerChar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
