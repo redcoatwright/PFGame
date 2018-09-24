@@ -4,17 +4,17 @@
 #3) add look descriptions after lighting fire when the PC can see stuff (mostly just caves and whatnot)
 #4) inventory choice should be wrapped in try/catch block not loop over keys of dict
 
-import utilities.diceRolling
-import utilities.playerChar
-import utilities.natMonsters
+import mechanics.diceRolling
+import player.playerChar
+import data.natMonsters
 import combat
 import time
-import utilities.weaponList
+import data.weaponList
 
-dice = utilities.diceRolling
-player_mod = utilities.playerChar
-monsters = utilities.natMonsters
-weapons = utilities.weaponList
+dice = mechanics.diceRolling
+player_mod = player.playerChar
+monsters = data.natMonsters
+weapons = data.weaponList
 
 def userInput(user_input):
     return user_input.lower().split(" ")
@@ -51,7 +51,7 @@ def main():
     name = input("What is your name? If you don't answer, it'll be set to a default name which is pretty stupid so you may as well put something down...  \n \nEnter your name: ")
     print("\n")
     
-    player = player_mod.newPC()
+    player = player_mod.newPC("test_level")
 
     if name != "":
         player.change_name(name)
@@ -321,8 +321,8 @@ def main():
                     print("|     Yours     |vs.|     Rat's     |")
                     print("'''''''''''''''''''''''''''''''''''''")
                     
-                    print(" AC: {0}         vs.      AC: {1}    ".format(player.ac,rat.ac))
-                    print(" HP: {0}/{1}     vs.      HP: {2}/{3}    ".format(player.c_hp,player.t_hp,rat.c_hp,rat.t_hp))
+                    print(" AC: {0}         vs.      AC: {1}    ".format(player.ac, rat.ac))
+                    print(" HP: {0}/{1}     vs.      HP: {2}/{3}    ".format(player.c_hp, player.t_hp, rat.c_hp, rat.t_hp))
                     print(" Init: {0}       vs.      Init: {1}  ".format(player.init, rat.init))
                     print(" Atk: {0}        vs.      Atk: {1}   ".format(player.melee_attk, rat.melee_attk))
 

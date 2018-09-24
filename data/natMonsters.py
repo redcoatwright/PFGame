@@ -3,8 +3,8 @@ class natMonster:
     def __init__(self, cmdName, dispName, maxHealth, curHealth, armor, dmgDie, dmgMult, crit, init, melee_attk):
         self.cmdName = cmdName #name provided by player
         self.dispName = dispName #display name of the monster
-        self.max_health = maxHealth #max health
-        self.current_health = curHealth #current health
+        self.t_hp = maxHealth #total health
+        self.c_hp = curHealth #current health
         self.ac = armor #armor class
         self.dmg_die = dmgDie #the dice that's rolled for dmg
         self.dmg_mult = dmgMult #the number of dice rolled
