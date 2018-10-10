@@ -33,12 +33,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="282" />
-          <entry key="py" value="15919" />
+          <entry key="py" value="18210" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="16201" />
+          <entry key="Python" value="18492" />
         </counts>
       </usages-collector>
     </session>
@@ -48,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/player/playerChar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="368">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
@@ -57,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/player/playerMechs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2346">
+            <state relative-caret-position="2363">
               <caret line="139" column="49" selection-start-line="139" selection-start-column="49" selection-end-line="139" selection-end-column="49" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -71,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/playerClasses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="-578">
               <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <marker date="1536532084874" expanded="true" signature="18:19" ph="..." />
@@ -100,14 +100,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/player/feats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            <state relative-caret-position="448">
+              <caret line="84" column="58" lean-forward="true" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
               <folding>
-                <marker date="1539046951824" expanded="true" signature="18:19" ph="..." />
-                <marker date="1539046951824" expanded="true" signature="18:20" ph="..." />
-                <marker date="1539046951824" expanded="true" signature="355:487" ph="..." />
-                <marker date="1539046951824" expanded="true" signature="516:522" ph="..." />
-                <marker date="1539046951824" expanded="true" signature="878:1009" ph="..." />
+                <marker date="1539133623914" expanded="true" signature="18:19" ph="..." />
+                <marker date="1539133623914" expanded="true" signature="18:20" ph="..." />
+                <marker date="1539133623914" expanded="true" signature="881:1031" ph="..." />
+                <marker date="1539133623914" expanded="true" signature="1060:1066" ph="..." />
+                <marker date="1539133623914" expanded="true" signature="2286:2428" ph="..." />
+                <marker date="1539133623914" expanded="true" signature="3083:3360" ph="..." />
               </folding>
             </state>
           </provider>
@@ -149,7 +150,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/player/playerData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="-153">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
@@ -448,25 +449,6 @@
     <entry file="file://$PROJECT_DIR$/mechanics/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/playerChar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/playerMechs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="139" column="49" selection-start-line="139" selection-start-column="49" selection-end-line="139" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1536351373909" expanded="true" signature="1954:1959" ph="..." />
-            <marker date="1536351373909" expanded="true" signature="2172:2177" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mechanics/diceRolling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -477,12 +459,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/playerData.py">
+    <entry file="file://$PROJECT_DIR$/data/natMonsters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="136">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/playerMechs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="139" column="49" selection-start-line="139" selection-start-column="49" selection-end-line="139" selection-end-column="49" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1536351373909" expanded="true" signature="1954:1959" ph="..." />
+            <marker date="1536351373909" expanded="true" signature="2172:2177" ph="..." />
           </folding>
         </state>
       </provider>
@@ -497,16 +488,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/natMonsters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/playerClasses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="-578">
           <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
             <marker date="1536532084874" expanded="true" signature="18:19" ph="..." />
@@ -531,16 +515,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/player/playerChar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/playerData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/player/feats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="448">
+          <caret line="84" column="58" lean-forward="true" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
           <folding>
-            <marker date="1539046951824" expanded="true" signature="18:19" ph="..." />
-            <marker date="1539046951824" expanded="true" signature="18:20" ph="..." />
-            <marker date="1539046951824" expanded="true" signature="355:487" ph="..." />
-            <marker date="1539046951824" expanded="true" signature="516:522" ph="..." />
-            <marker date="1539046951824" expanded="true" signature="878:1009" ph="..." />
+            <marker date="1539133623914" expanded="true" signature="18:19" ph="..." />
+            <marker date="1539133623914" expanded="true" signature="18:20" ph="..." />
+            <marker date="1539133623914" expanded="true" signature="881:1031" ph="..." />
+            <marker date="1539133623914" expanded="true" signature="1060:1066" ph="..." />
+            <marker date="1539133623914" expanded="true" signature="2286:2428" ph="..." />
+            <marker date="1539133623914" expanded="true" signature="3083:3360" ph="..." />
           </folding>
         </state>
       </provider>
