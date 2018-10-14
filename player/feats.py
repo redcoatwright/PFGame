@@ -85,6 +85,139 @@ class BreadthOfExperience(BasicFeat):
     super().__init__("Breadth of Experience. You've been many places and due to that get bonuses, +2 on knowledge checks", skill=["nature", "religion", "arcana", "dungeoneering", "nobility", "engineering", "geography", "history", "local", "planes"], skill_bon=2)
 
 
+class BurnBurnBurn(BasicFeat):
+
+    super().__init__("Burn! Burn! Burn! Torches and alchemical fire give +1d4 damage. Avoiding burning or checks to extinguish yourself give +4", dmg=[1, 4], skill="reflex", skill_bon=4)
+
+
+class CarefulSneak(BasicFeat):
+
+    super().__init__("Careful Sneak. No armor penalties on stealth checks.", pre=["stealth", 10])
+
+
+class CarefulSpeaker(BasicFeat):
+
+    super().__init__("Careful Speaker. You speak so well, you can bluff more easily +2 on bluff.", skill="bluff", skill_bon=2, pre=["wisdom", 13])
+
+
+class ImprovedChannel(BasicFeat):
+
+    super().__init__("Improved Channel. Bonus when channeling positive energy, +2 to dmg/heal.", dmg=2, pre=["paladin", 1])
+
+
+class Childlike(BasicFeat):
+
+    super().__init__("Childlike. You are better able to disguise yourself as a child, +2 on disguise checks to look like a kid. Fuckin weirdo if you use this, though.", skill="disguise", skill_bon=2)
+
+
+class CommandAnimals(BasicFeat):
+
+    super().__init__("Command Animals. You can attempt to control animals by suggestion.", pre=["handle animal", 15])
+
+
+class CommandPlants(BasicFeat):
+
+    super().__init__("Command Plants. You can control plants.", pre=[["druid", 3], ["nature", 15]])
+
+
+class Confabulist(BasicFeat):
+
+    super().__init__("Confabulist. Hey, if you fail a bluff check and have this feat, you can bluff again for a -5 penalty!", skill="bluff", skill_bon=-5, pre=[["bluff", 8], ["charisma", 14]])
+
+
+class Conviction(BasicFeat):
+
+    super().__init__("Conviction. Your conviction empowers your channeling, +2 to dmg/heal when channeling positive energy.", dmg=2, pre=["paladin", 5])
+
+
+class Cosmopolitan(BasicFeat):
+
+    super().__init__("Cosmopolitan. Read and speak two additional languges.")
+
+
+class CriminalReputation(BasicFeat):
+
+    super().__init__("Criminal Reputation. You're evil, you play well with criminals and gain bonuses when interacting with them.", skill=["bluff", "intimidate", "sense motive"], pre=["evil", 6])
+
+
+class CuttingHumiliation(BasicFeat):
+
+    super().__init__("Cutting Humiliation. Sticks and stones and all that business, +3 on intimidation checks.", skill="intimidate", skill_bon=3)
+
+
+class CypherMagic(BasicFeat):
+
+    super().__init__("Cypher Magic. Add 1/4 your caster level to spells from scrolls.", pre=["CL", 4])
+
+
+class DeadlyDealer(BasicFeat):
+
+    super().__init__("Deadly Dealer. You're fucking Gambit, bro. You throw cards with deadly accuracy.", pre=[["dexterity", 15], ["neutral", "chaotic"]])
+
+
+class Deceitful(BasicFeat):
+
+    super().__init__("Deceitful. You're not...a great guy. +2 on bluff and disguise checks.", skill=["bluff", "disguise"], skill_bon=2, pre=[["bluff", 5], ["disguise", 5]])
+
+
+class DeepDiver(BasicFeat):
+
+    super().__init__("Deep Diver. You're a fish! You can swim down deep and hold you breath for a long time.", pre=[["constitution", 16], ["swim", 12]])
+
+
+class DeepDrinker(BasicFeat):
+
+    super().__init__("Deep Drinker. You can take a lot of drinks before you get drunk.", pre=["constitution", 17])
+
+
+class DeftHands(BasicFeat):
+
+    super().__init__("Deft Hands. You're good with your hands *wink* *wink*. No but actually, +2 to Disable Device and Sleight of Hand checks", skill=["disable device", "sleight of hand"], skill_bon=2, pre=[["disable device", 5], ["sleight of hand", 5]])
+
+
+class DisableDweomer(BasicFeat):
+
+    super().__init__("Disable Dweomer. You can disable magical devices, just like the Dweomer could, whoever they were.", pre=["disable device", 15])
+
+
+class Dislocate(BasicFeat):
+
+    super().__init__("Dislocate. You can take 1d8 damage to pop your joint out of socket.", pre=[["dexterity", 14], ["constitution", 14]])
+
+    dmg_taken = [1, 8]
+
+
+class DivineProtection(BasicFeat):
+
+    super().__init__("Divine Protection. Gain a bonus equal to your charisma bonus to saving throws. Pretty cool!", att="charisma", pre=[["charisma", 15], ["religion", 10]])
+
+
+class EagleEyed(BasicFeat):
+
+    super().__init__("Eagle Eyed. Your eyes work real good. +3 on perception checks.", skill="perception", skill_bon=3, pre=[["perception", 10], ["druid", 3]])
+
+
+class Empath(BasicFeat):
+
+    super().__init__("Empath. You can read a person like a book, know their emotions instinctively, it's like anti-autism.", pre=[["sense motive", 10], ["perception", 5]])
+
+
+class EnergyChannel(BasicFeat):
+
+    super().__init__("Energy Channel. Channel your divine energy into a weapon dealing extra damage.", pre=["paladin", 5])
+
+
+class ExpandedPreparation(BasicFeat):
+
+    super().__init__("Expanded Preparation. You're basically a magic nerd, you spent a lot of time studying and because of that gain extra spell slots.", pre=[["sorcerer", 3], ["druid", 3]])
+
+
+class ExperiencedVagabond(BasicFeat):
+
+    super().__init__("Experienced Vagabond. You're scum, but you're really good at being scum. You gain bonuses when interacting with criminals and lowlifes. +5 to bluff and intimidate.", skill=["bluff", "intimidate"], skill_bon=5, pre_feat="criminal reputation", pre=["evil", 8])
+
+
+
 
 
 
