@@ -1,4 +1,4 @@
-import diceRolling
+import mechanics.diceRolling as diceRolling
 
 def melee_attack(attk_mod):
     return diceRolling.roll_d20() + attk_mod

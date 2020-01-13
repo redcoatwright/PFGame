@@ -4,17 +4,22 @@
 #3) add look descriptions after lighting fire when the PC can see stuff (mostly just caves and whatnot)
 #4) inventory choice should be wrapped in try/catch block not loop over keys of dict
 
+
+
 import mechanics.diceRolling
 import player.playerChar
 import data.natMonsters
 import combat
 import time
 import data.weaponList
+import levels.beginningCave as beg_cav
+import world
 
 dice = mechanics.diceRolling
 player_mod = player.playerChar
 monsters = data.natMonsters
 weapons = data.weaponList
+cavern = beg_cav.Cavern1()
 
 def userInput(user_input):
     return user_input.lower().split(" ")
@@ -34,7 +39,7 @@ def main():
     print("First, however, you have to shake a hangover, figure out how to be a person again")
     print("and determine your path to said adventure. \n")
     print()
-    print("It begins in darkness...")
+    print("Like so many of the great stories that have come before, it begins after copious drinks and waking up in darkness...")
 
     print("            _")
     print(" _         | |")
@@ -57,6 +62,9 @@ def main():
         player.change_name(name)
 
     print("Hi " + player.char_name + ".\n")
+
+    player.pos_x = cavern.start[0]
+    player.pos_y = cavern.start[1]
 
     control_signal_1 = 0
     control_signal_2 = 0

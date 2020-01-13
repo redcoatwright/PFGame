@@ -1,5 +1,5 @@
-import ItemList
-import natMonsters
+import data.ItemList as ItemList
+import data.natMonsters as natMonsters
 
 class Area:
     items = []
@@ -24,6 +24,8 @@ class Map:
 
     def print_invalid_area(self):
         raise NotImplementedError()
+
+    
 
 class Cavern(Map):
     def __init__(self):

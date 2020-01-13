@@ -62,16 +62,16 @@ class newPC():
             self.current_level.print_invalid_area()
 
     def _move_north(self):
-        self._move_self(-1, 0)
-
-    def _move_south(self):
-        self._move_self(1, 0)
-
-    def _move_east(self):
         self._move_self(0, 1)
 
-    def _move_west(self):
+    def _move_south(self):
         self._move_self(0, -1)
+
+    def _move_east(self):
+        self._move_self(1, 0)
+
+    def _move_west(self):
+        self._move_self(-1, 0)
 
     def equipItem(self, item):
         newPC.equItem = item
@@ -103,3 +103,4 @@ class newPC():
     def change_name(self, name):
         newPC.char_name = name
     
+    # def search_ground(self, level):

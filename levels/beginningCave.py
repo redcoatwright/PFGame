@@ -19,20 +19,22 @@ items = data.ItemList
 # @ = exit
 # # = item
 # $ = monster
-class Cavern(world.Map):
+class Cavern1(world.Map):
+
+    start = (0, 1)
 
     def __init__(self):
-        super().__init__(5, 2)
-
-        rat = monsters.Rat()
-        rock = weapons.Rock()
+        super().__init__(5, 3)
 
         column = cave_features.Column()
 
-        self.level[4, 1] = rat
-        self.level[1, 1] = rock
-        self.level[0, 1] = items.BasicShirt()
+        self.level[4][1] = monsters.Rat()
+        self.level[1][1] = weapons.Rock()
+        self.level[0][0] = items.BasicShirt()
+        self.level[0][1] = items.FlinTin()
 
-        self.level[4, 0] = column
-        self.level[4, 2] = column
+        self.level[4][0] = column
+        self.level[4][2] = column
+
+        
 
