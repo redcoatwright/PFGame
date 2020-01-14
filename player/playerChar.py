@@ -103,4 +103,12 @@ class newPC():
     def change_name(self, name):
         newPC.char_name = name
     
-    # def search_ground(self, level):
+    def search_ground(self, level):
+        if not level[self.pos_x][self.pos_y].items:
+            print("You do not find anything on the ground!")
+        else:
+            print("You find something! Yay!")
+            print("You've found...")
+
+            for x in level[self.pos_x][self.pos_y].items:
+                print("- " + x.item_name + "\n")

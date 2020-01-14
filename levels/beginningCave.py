@@ -11,8 +11,8 @@ items = data.ItemList
 
 #          4,2
 # [][][][][|]
-# [][#][][$][@]
-# [#][][][][|]
+# [##][#][][$][@]
+# [][][][][|]
 # 0,0
 #
 # | = non-traversable feature
@@ -28,10 +28,10 @@ class Cavern1(world.Map):
 
         column = cave_features.Column()
 
-        self.level[4][1] = monsters.Rat()
-        self.level[1][1] = weapons.Rock()
-        self.level[0][0] = items.BasicShirt()
-        self.level[0][1] = items.FlinTin()
+        self.level[4][1].enemies.append(monsters.Rat())
+        self.level[1][1].items.append(weapons.Rock())
+        self.level[0][1].items.append(items.BasicShirt())
+        self.level[0][1].items.append(items.FlinTin())
 
         self.level[4][0] = column
         self.level[4][2] = column

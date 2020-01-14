@@ -162,6 +162,7 @@ def main():
                     print("You search in all your pockets and luckily find a box of tinder and a flint. You don't remember putting it there, but then again, you don't remember anything pretty much.")
                     print("Classic amnesia... \n")
                     control_signal_2 = 1
+                    
 
                 elif user_input[1] == "memories" or user_input[1] == "memory":
 
