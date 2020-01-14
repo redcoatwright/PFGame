@@ -3,7 +3,7 @@ class Item:
     def __init__(self, desc, value, name):
         self.item_desc = desc
         self.item_val = value
-        self.item_name = name
+        self.name = name
 
 class FlinTin(Item):
     def __init__(self):

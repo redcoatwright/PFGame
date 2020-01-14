@@ -33,6 +33,9 @@ class Cavern1(world.Map):
         self.level[0][1].items.append(items.BasicShirt())
         self.level[0][1].items.append(items.FlinTin())
 
+        print(self.level[1][1].items)
+        print(self.level[0][1].items)
+
         self.level[4][0] = column
         self.level[4][2] = column
 

@@ -154,6 +154,8 @@ def main():
 
                 if user_input[1] == "ground":
 
+                    player.search_ground(cavern.level)
+
                     print("You grope around on the ground and your hands stumble across a large rock, it could be used as an impromptu weapon... \n")
                     control_signal_1 = 1
 

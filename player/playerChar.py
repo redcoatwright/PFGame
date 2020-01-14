@@ -110,5 +110,24 @@ class newPC():
             print("You find something! Yay!")
             print("You've found...")
 
+
+            count = 0
             for x in level[self.pos_x][self.pos_y].items:
-                print("- " + x.item_name + "\n")
+                print("- " + x.name + "\n")
+
+                print()
+                print("Do you wish to take this item? \n")
+
+                user_input = input("\n >>> ").lower().split(" ")
+
+                if user_input == "yes" or user_input == "y" or user_input == "yeah" or user_input == "yea" or user_input == "yeet ma geet":
+                    self.inventory.append(level[self.pos_x][self.pos_y].items.pop(count))
+                    print("You took the " + x.name + "\n")
+                    
+                elif user_input == "no" or user_input == "n" or user_input == "nope" or user_input == "get fucked you loser":
+                    print("You did not take the " + x.name + "\n")
+                    
+
+    def take_item(self, item):
+        self.inventory.append(item)
+        ## unused right now 1/14/2020
