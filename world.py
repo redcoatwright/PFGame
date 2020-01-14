@@ -2,11 +2,13 @@ import data.ItemList as ItemList
 import data.natMonsters as natMonsters
 
 class Area:
-    items = []
-    enemies = []
+
     intro_text = "An area"
 
     def __init__(self, x, y):
+        self.items = []
+        self.enemies = []
+
         self.x = x
         self.y = y
 
