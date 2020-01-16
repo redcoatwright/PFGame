@@ -15,11 +15,13 @@ import data.weaponList
 import levels.beginningCave as beg_cav
 import world
 
+
 dice = mechanics.diceRolling
 player_mod = player.playerChar
 monsters = data.natMonsters
 weapons = data.weaponList
 cavern = beg_cav.Cavern1()
+items = data.ItemList
 
 def userInput(user_input):
     return user_input.lower().split(" ")
@@ -156,13 +158,15 @@ def main():
 
                     player.search_ground(cavern.level)
 
-                    print("You grope around on the ground and your hands stumble across a large rock, it could be used as an impromptu weapon... \n")
                     control_signal_1 = 1
 
                 elif user_input[1] == "pockets" or user_input[1] == "pocket" or user_input[1] == "self" or user_input[1] == "myself":
 
                     print("You search in all your pockets and luckily find a box of tinder and a flint. You don't remember putting it there, but then again, you don't remember anything pretty much.")
-                    print("Classic amnesia... \n")
+                    print("Classic amnesia...it's now in your inventory. \n")
+
+                    player.inventory.append(items.FlinTin())
+
                     control_signal_2 = 1
                     
 
