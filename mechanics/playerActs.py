@@ -1,0 +1,1 @@
+# File that contains all of the basic player actions aka ones that the player can ALWAYS do unless restricted by something
