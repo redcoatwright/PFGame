@@ -28,13 +28,13 @@ class newPC():
         if not noun:
             print("Move where?")
         elif noun == 'north':
-            self._move_north()
+            self.move_north()
         elif noun == 'south':
-            self._move_south()
+            self.move_south()
         elif noun == 'east':
-            self._move_east()
+            self.move_east()
         elif noun == 'west':
-            self._move_west()
+            self.move_west()
         else:
             print("I don't understand that direction. Try again.")
 
@@ -61,16 +61,16 @@ class newPC():
         else:
             self.current_level.print_invalid_area()
 
-    def _move_north(self):
+    def move_north(self):
         self._move_self(0, 1)
 
-    def _move_south(self):
+    def move_south(self):
         self._move_self(0, -1)
 
-    def _move_east(self):
+    def move_east(self):
         self._move_self(1, 0)
 
-    def _move_west(self):
+    def move_west(self):
         self._move_self(-1, 0)
 
     def equipItem(self, item):
