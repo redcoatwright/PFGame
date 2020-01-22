@@ -45,6 +45,8 @@ Feature List:
     -
 """
 
+import mechanics.diceRolling as roll
+
 def look(direction, flavor=" and see nothing of note, if you're seeing this message then someone didn't write in the flavor text properly...\n"):
     print("You look to the " + direction + flavor + ".\n")
 
@@ -64,7 +66,27 @@ def move(direction, flavor=" and nothing much interesting happens to you, ah the
         else:
             raise ValueError("The value input to direction made no sense. value: " + direction)
 
+def skill_test(skill, dif=10, obj=None):
+    
+    if skill == "disable device" and obj is not None:
+        print("You attempt to use your knowledge of devices to disable this " + obj.desc + ".\n")
+        score = roll.roll_d20
+        if score >= obj.dif:
+            print("Success! " + obj.success + ".\n")
+        else:
+            print("Sorry, you failed your skill check...basically you suck. lolz")
 
-move("booger", mode=1)
-look("north")
-
+    elif skill == "disable device" and obj is None:
+        print("I don't think you can do that...can you really disable that device?")
+        
+    if skill == "climb" and obj is not None:
+        print("You attempt to climb the " + obj.desc + ".\n")
+        score = roll.roll_d20
+        if score >= obj.dif:
+            print("Success! " + obj.success + ".\n")
+        else:
+            print("Oof, you fall down the " + obj.desc + " and take " + obj.dmg + " damage.\n")
+            ### IMPLEMENT ROLL MANAGEMENT aka an obj says "1d4" have that roll 1d4...###
+        
+    elif skill == "climb" and obj is None:
+        print("What are you trying to climb? I didn't understand that...(probably not implemented by the lazy devs)")
