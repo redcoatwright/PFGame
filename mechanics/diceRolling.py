@@ -4,9 +4,9 @@ from time import sleep
 def roll_d20():
     for x in range(1,5):
         print("-", end = "")
-        sleep(0.15)
+        sleep(0.30)
         print("|", end = "")
-        sleep(0.15)
+        sleep(0.30)
     print("->", end = " ")
     rand_num = random.randint(1,20)
     print(rand_num)
@@ -89,5 +89,36 @@ def roll_d2():
     print(rand_num)
     return rand_num
 
+def roll_management(roll_type):
+    if roll_type == "1d2":
+        result = roll_d2()
+        return result
+    
+    elif roll_type == "1d3":
+        result = roll_d3()
+        return result
+    
+    elif roll_type == "1d4":
+        result = roll_d4()
+        return result
+    
+    elif roll_type == "1d6":
+        result = roll_d6()
+        return result
+    
+    elif roll_type == "1d8":
+        result = roll_d8()
+        return result
+    
+    elif roll_type == "1d10":
+        result = roll_d10()
+        return result
+    
+    elif roll_type == "1d12":
+        result = roll_d12()
+        return result
 
+    elif roll_type == "1d20":
+        result = roll_d20()
+        return result
 
